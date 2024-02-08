@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -22,7 +22,7 @@
    
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/ProfileMaker.png" alt="Priam Patidar profile picture" />
+        <img src="./assets/images/profile.png" alt="Priam Patidar profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -31,7 +31,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/docs/Resume.pdf')"
           >
             Download CV
           </button>
@@ -41,13 +41,13 @@
         </div>
         <div id="socials-container">
           <img
-            src="./assets/linkedin.png"
+            src="./assets/images/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
             onclick="location.href='https://www.linkedin.com/in/pritampatidar225/'"
           />
           <img
-            src="./assets/github.png"
+            src="./assets/images/github.png"
             alt="My Github profile"
             class="icon"
             onclick="location.href='https://github.com/pritptdr'"
@@ -55,15 +55,25 @@
         </div>
       </div>
     </section>
+
+
+
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/images/about-pic.jpeg" height="350px" width="400px"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
               <img
-                src="./assets/experience.png"
+                src="./assets/images/experience.png"
                 alt="Experience icon"
                 class="icon"
               />
@@ -72,7 +82,7 @@
             </div>
             <div class="details-container">
               <img
-                src="./assets/education.png"
+                src="./assets/images/education.png"
                 alt="Education icon"
                 class="icon"
               />
@@ -82,16 +92,83 @@
           </div>
           <div class="text-container">
             <p>
-                I have to write about me.
+                As of now few things are changed.
             </p>
           </div>
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
+        src="./assets/images/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="project">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/images/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Cafe-Management-System</h2>
+            
+            <div class="project-details">
+              <!-- Layer Text-->
+              <p class="layer-text">The Cafe Management System desktop application is a robust software 
+                designed to facilitate seamless cafe operations directly from a desktop.</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/preet-ptdr/Cafe-Management-System'"
+                >
+                  Github
+                </button>
+                
+              </div>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/images/project-2.jpg" width="1000px" height="1000px"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Online-Grocery-Store</h2>
+            
+            <div class="project-details">
+              <!-- Layer Text-->
+              <p class="layer-text">Online grocery store is a website that presents a layout and backend logic for a typical online
+                business.
+                </p>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/preet-ptdr/Grocery-Store'" 
+                  >
+                    Github
+                  </button>
+                  
+                </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <img
+        src="./assets/images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
       />
     </section>
     
@@ -101,15 +178,15 @@
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
-            src="./assets/email.png"
+            src="./assets/images/email.png"
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">preetampatidar225@gmail.com</a></p>
+          <p><a href="mailto:preetampatidar225@gmail.com">preetampatidar225@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/linkedin.png"
+            src="./assets/images/linkedin.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
@@ -117,6 +194,8 @@
         </div>
       </div>
     </section>
+
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -129,6 +208,8 @@
       </nav>
       <p>Copyright &#169; 2023 Pritam Patidar. All Rights Reserved.</p>
     </footer>
+
+
     <script src="script.js"></script>
   </body>
 </html>
